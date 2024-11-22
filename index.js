@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const dotenv = require("dotenv");
 const connectDB = require("./config/database");
-const serverless = require('serverless-http');
+
 // const productRoutes = require('./routes/product')
 
 const app = express();
@@ -37,4 +37,4 @@ app.listen(port, () => {
   console.log(`App is running on port ${port}`);
 });
 
-module.exports.handler = serverless(app);
+
